@@ -1,0 +1,289 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display:flex ;
+    align-items:center ;
+
+}
+
+/* logo and image  */
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logo img{
+    padding: 1px 0px;
+    height:38px;
+    width: 53px;
+    /* border: 2px solid yellow; */
+    /* border-radius: 3px; */
+
+/* navigation bar  */
+}
+#navbar{
+    position: fixed;
+    padding: 0px 5px;
+    height: 76px;
+    top: 0;
+    width: 100%;
+}
+ #navbar ul{
+    display: flex;
+
+}
+ #navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    /* color: white; */
+
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+
+}
+#navbar ul li a:hover{
+    
+    color: white;
+    background-color:black;
+
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 636px;
+}
+#home::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* services section  */
+/* .Services-container{
+    display: flex;
+    align-items: center;
+} */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid red;
+    /* height: 150px; */
+    display: block;
+    margin: auto;
+    margin: 0px 5px;
+    background-color:rgb(197, 224, 235);
+    border-radius: 8px;
+
+}
+#services .box img{
+    /* border: 2px solid red; */
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+#services .img p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Services-container h1{
+    background-color: rgb(101, 219, 235);
+    border: 2px solid rgb(139, 139, 245);
+}
+
+
+/* clients Section  */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+    border: 2px solid pink;
+    border-radius: 15px;
+
+}
+
+.client-items{
+    margin: 2px 44px;
+    padding: 4px 20px;
+   
+}
+
+#client-section::before{
+    content: "";
+    background-color: rgb(231, 216, 218);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#client-section h1{
+    background-color: pink;
+    border: 2px solid rgb(245, 95, 120);
+    border-radius: 10px;
+}
+
+
+/* contact section  */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../bg4.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+
+
+
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+}
+#contact-box label{
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1rem;
+}
+
+
+
+#contact h1::before{
+    content: "";
+    background-color: rgb(231, 216, 218);
+    position:relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.8;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+
+
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: grey;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
